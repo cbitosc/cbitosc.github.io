@@ -24,7 +24,7 @@ strong {
   width: 100%;
   background: transparent;
   color: #fff;
-  background: #212121;
+  background: transparent;
   padding: 0 .5rem;
   position: relative;
   z-index: 9999;
@@ -41,6 +41,7 @@ strong {
   color: inherit;
   text-decoration: none;
   padding: 0 .5rem;
+  color: #252525;
 }
 
 .header .header__logo {
@@ -71,11 +72,11 @@ strong {
 /*--------------- hero ---------------*/
 
 .hero {
-  height: 100vh; 
+  height: 100vh;
   height: 100vh;
   min-height: 400px;
   margin-top: -3rem;
-  background: #03a9f4;
+  background: #03A9F4;
   position: relative;
   overflow: hidden;
 }

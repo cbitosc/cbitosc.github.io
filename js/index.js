@@ -8,12 +8,37 @@ var group3 = banner.querySelector('.hero__level_3');
 
 var orientation = {
   beta: 0,
-  gamma: 0
+  gamma: 0,
+};
+
+var mousePos = {
+  x: 0,
+  y: 0,
+};
+
+function debounce(func, wait, immediate) {
+  var timeout;
+  return function() {
+    var context = this, args = arguments;
+    var later = function() {
+      timeout = null;
+      if (!immediate) func.apply(context, args);
+    };
+    var callNow = immediate && !timeout;
+    clearTimeout(timeout);
+    timeout = setTimeout(later, wait);
+    if (callNow) func.apply(context, args);
+  };
 };
 
 function onMouseMove(e) {
   var clientX = e.clientX;
   var clientY = e.clientY;
+
+  console.log(clientX, clientY);
+
+  mousePos.x = clientX;
+  mousePos.y = clientY;
 
   var windowWidth = window.innerWidth;
   var windowHeight = window.innerHeight;
@@ -21,7 +46,7 @@ function onMouseMove(e) {
   var xPivot = windowWidth / 2;
   var yPivot = windowHeight / 2;
 
-  // Don't judge my math
+  // don't judge my math
   orientation.beta = (xPivot - clientX) / 100;
   orientation.gamma = (yPivot - clientY) / 100;
 };
@@ -35,8 +60,6 @@ function animationLoop() {
 var portrait = window.innerWidth < window.innerHeight;
 
 function handleOrientation(evt) {
-  console.log(evt);
-
   var beta = evt.beta % 360;
   var gamma = evt.gamma % 360;
   orientation.beta = beta;
@@ -66,8 +89,6 @@ function handleOrientation(evt) {
 };
 
 function applyTransforms(xPercent, yPercent) {
-  console.log(xPercent, yPercent);
-
   // Moves a lot, contains specs
   group1.style.transform = 'translate(' + xPercent + '%, ' + yPercent + '%)';
 
@@ -78,12 +99,16 @@ function applyTransforms(xPercent, yPercent) {
   group3.style.transform = 'translate(' + xPercent / 1.5 + '%, ' + yPercent / 1.5 + '%)';
 };
 
-// TODO: Make this more performant
-banner.addEventListener('mousemove', onMouseMove);
+banner.addEventListener('mousemove', debounce(onMouseMove, 16));
 
 if (window.DeviceOrientationEvent) {
   window.addEventListener('deviceorientation', handleOrientation);
 }
 
-// Call infinite loop
+// call animation loop
 animationLoop();
+
+window.addEventListener('load', function() {
+  // initially move to center
+  onMouseMove({clientX: window.innerWidth/2, clientY: window.innerHeight/2});
+});
