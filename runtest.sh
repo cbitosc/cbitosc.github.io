@@ -16,7 +16,7 @@ fi
 # run lighthouse test
 lighthouse --output=json --output-path=./lighthouse-log.json http://127.0.0.1:5858/
 
-if [[ -n $? ]]; then
+if [[ $? -gt 0 ]]; then
   echo "> Lighthouse failed to run"
   exit 1
 fi
