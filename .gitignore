@@ -2,3 +2,5 @@
 *.log
 node_modules
 desktop.ini
+lighthouse-log.json
+.sass_cache
