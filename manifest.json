@@ -3,11 +3,11 @@
   "short_name": "COSC",
   "scope": "/",
   "icons": [{
-    "src": "/images/touch/logo@192.png",
+    "src": "/img/touch/logo_192.png",
     "type": "img/png",
     "sizes": "192x192"
   }, {
-    "src": "/images/touch/logo@512.png",
+    "src": "/img/touch/logo_512.png",
     "type": "img/png",
     "sizes": "512x512"
   }],

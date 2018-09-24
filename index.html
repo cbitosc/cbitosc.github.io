@@ -5,23 +5,28 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <title>CBIT Open-Source Community (COSC)</title>
-  <meta name="description" content="COSC is an open-source Community based in CBIT and is managed by its students and staff">
+  <title>CBIT Open Source Community (COSC)</title>
+  <meta name="description" content="COSC is an open source community based in CBIT and is managed by its students and staff">
 
-  <meta property="og:title" content="CBIT Open-Source Community - COSC">
+  <meta property="og:title" content="CBIT Open Source Community - COSC">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://cbitosc.github.io/">
-  <meta property="og:image" content="https://cbitosc.github.io{3:/img/touch/logo_256.png}">
-  <meta property="og:description" content="COSC is an open-source Community based in CBIT and is managed by its students and staff">
+  <meta property="og:image" content="https://cbitosc.github.io/img/touch/logo_256.png">
+  <meta property="og:description" content="COSC is an open source community based in CBIT and is managed by its students and staff">
 
-  <meta name="twitter:title" content="CBIT Open-Source Community - COSC">
+  <meta name="twitter:title" content="CBIT Open Source Community - COSC">
   <meta name="twitter:card" content="summary">
   <meta name="twitter:url" content="https://cbitosc.github.io/">
-  <meta name="twitter:image" content="https://cbitosc.github.io{3:/img/touch/logo_256.png}">
-  <meta name="twitter:description" content="COSC is an open-source Community based in CBIT and is managed by its students and staff">
+  <meta name="twitter:image" content="https://cbitosc.github.io/img/touch/logo_256.png">
+  <meta name="twitter:description" content="COSC is an open source community based in CBIT and is managed by its students and staff">
   <meta name="twitter:creator" content="@ramlmn">
 
   <link rel="manifest" href="/manifest.json">
+
+  <link rel="icon" href="/img/touch/logo_64.png">
+  <link rel="apple-touch-icon" sizes="64x64" href="/img/touch/logo_64.png">
+  <link rel="apple-touch-icon" sizes="192x192" href="/img/touch/logo_192.png">
+  <link rel="apple-touch-icon" sizes="256x256" href="/img/touch/logo_256.png">
 
   <meta name="theme-color" content="#03A9F4">
 
@@ -29,6 +34,7 @@
   <link rel="preload" href="/img/banner_group_1.svg" as="image" type="image/svg+xml">
   <link rel="preload" href="/img/banner_group_2.svg" as="image" type="image/svg+xml">
   <link rel="preload" href="/img/banner_group_3.svg" as="image" type="image/svg+xml">
+  <link rel="preload" href="/img/abstract-bg-min.png" as="image" type="image/png">
   <link rel="preload" href="/js/index.js" as="script">
 
   <link rel="stylesheet" href="/stylesheet/style.css">
@@ -47,10 +53,10 @@
         <nav class="header-nav">
           <ul class="header-nav__list">
             <li class="header-nav__list-item">
-              <a href="https://facebook.com/blah-blah">Facebook</a>
+              <a href="https://github.com/cosc">GitHub</a>
             </li>
             <li class="header-nav__list-item">
-              <a href="https://github.com/cosc">GitHub</a>
+              <a href="/coc">COC</a>
             </li>
           </ul>
         </nav>
@@ -59,6 +65,7 @@
   </header>
 
   <div class="hero">
+    <div class="hero__bg"></div>
     <div class="hero__level hero__level_1">
       <img src="/img/banner_group_3.svg" alt="Banner image part 1"/>
     </div>
@@ -72,36 +79,48 @@
 
   <main class="main">
     <div class="main__content">
-      <section class="intro-section">
+      <section class="section section-intro">
         <h1 class="title__heading">CBIT Open Source Community</h1>
-        <p class="title__description">
-          <strong>COSC</strong> is an opensource focused community based in <strong>Chaitanya Bharathi Institute of Technology</strong> - Hyderabad</p>
+        <p class="title__description"><strong>COSC</strong> is an open source focused community based in <strong>Chaitanya Bharathi Institute of Technology</strong> - Hyderabad</p>
+
+          <p class="title__description">We conduct hackathons, bootcamps and workshops to teach students different technologies while promoting open source culture</p>
       </section>
-      <section class="projects">
-        <h2 class="section__header">We focus on</h2>
+
+      <section class="section">
+        <h2 class="title__heading">Why Open Source?</h2>
+        <p class="title__description"><strong>Open Source</strong> encourages students to collaborate and helps in know how. It provides students insight into better software and also helps to work on them</p>
+      </section>
+
+      <section class="section section-past">
+        <h2 class="section__header">The team</h2>
         <div class="cards">
-          <a class="card" href="#">
-            <div class="card__image" style="background-image: url('/img/web.svg')">
+          <div class="team card">
+            <div class="card__image" style="background-image: url('/img/team_18-19/rohithsrk.png')"></div>
+            <p class="card__header">Rohith Singirikonda</p>
+            <p class="card__info--handle"><a href="https://github.com/rohithsrk" target="_blank" rel="noopener">@rohithsrk</a></p>
+            <p class="card__info--pos">Team member</p>
+          </div>
+          <div class="team card">
+            <div class="card__image" style="background-image: url('/img/team_18-19/r0mflip.png')">
             </div>
-            <div class="card__header">Web Technologies</div>
-          </a>
-          <a class="card" href="#">
-            <div class="card__image" style="background-image: url('/img/learning.svg')">
+            <p class="card__header">Ram Damera</p>
+            <p class="card__info--handle"><a href="https://github.com/r0mflip" target="_blank" rel="noopener">@r0mflip</a></p>
+            <p class="card__info--pos">Team member</p>
+          </div>
+          <div class="team card">
+            <div class="card__image" style="background-image: url('/img/team_18-19/notlmn.png')">
             </div>
-            <div class="card__header">Machine Learning</div>
-          </a>
-          <a class="card" href="#">
-            <div class="card__image" style="background-image: url('/img/competition.svg')">
-            </div>
-            <div class="card__header">Code Competitions</div>
-          </a>
+            <p class="card__header">Laxman Damera</p>
+            <p class="card__info--handle"><a href="https://github.com/notlmn" target="_blank" rel="noopener">@notlmn</a></p>
+            <p class="card__info--pos">Team member</p>
+          </div>
         </div>
       </section>
     </div>
   </main>
 
   <footer class="page__footer">
-    COSC - curated by the&nbsp;<strong>Computer Science Department, CBIT</strong>
+    <p>&copy; 2018 COSC</p>
   </footer>
 
   <script src="/js/index.js"></script>
