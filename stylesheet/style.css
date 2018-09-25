@@ -41,7 +41,7 @@ strong {
   color: inherit;
   text-decoration: none;
   padding: 0 .5rem;
-  color: #e4e4e4;
+  color: #ffffff;
 }
 
 .header .header__logo {
@@ -75,19 +75,9 @@ strong {
   height: 100vh;
   min-height: 400px;
   margin-top: -3rem;
-  background: #13649e;
+  background: #03a9f4;
   position: relative;
   overflow: hidden;
-}
-
-.hero__bg {
-  position: absolute;
-  left: 0;
-  right: 0;
-  top: 0;
-  bottom: 0;
-  opacity: 0.2;
-  background: url('/img/abstract-bg-min.png') repeat center center #777 / contain;
 }
 
 .hero__level {
@@ -173,6 +163,8 @@ p {
   background-repeat: no-repeat;
   background-position: center;
   border-radius: 50%;
+
+  background-color: #888888;
 }
 
 .team.card .card__header,
@@ -208,7 +200,6 @@ p {
   width: 100%;
   padding: 1em;
   color: #404040;
-  /* background: #313131; */
   border-top: 1px solid #cccccc;
 }
 
