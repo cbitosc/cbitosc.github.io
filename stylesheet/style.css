@@ -162,6 +162,7 @@ p {
 }
 
 .card__image {
+  max-width: 100%;
   align-self: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -172,7 +173,7 @@ p {
 .section-past .event.card {
   padding: 0;
   border: 1px solid #cccccc;
-  border-radius: 12px;
+  border-radius: 6px;
   overflow: hidden;
 }
 
