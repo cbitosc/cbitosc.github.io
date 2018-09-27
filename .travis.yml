@@ -1,0 +1,13 @@
+sudo: required
+dist: trusty
+before_script:
+  - npm install -g serve lighthouse
+  - export DISPLAY=:99.0
+  - serve -l 5858 &
+  - export LIGHTHOUSE_CHROMIUM_PATH="$(pwd)/chrome-linux/chrome"
+  - sh -e /etc/init.d/xvfb start
+  - npm explore -g lighthouse -- ./lighthouse-core/scripts/download-chrome.sh
+  - mv $(npm root -g)/lighthouse/chrome-linux .
+  - $LIGHTHOUSE_CHROMIUM_PATH --version
+script:
+  - ./runtest.sh
