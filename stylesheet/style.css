@@ -21,13 +21,17 @@ strong {
 /*--------------- header ---------------*/
 
 .header {
+  background: #404040;
+  color: #ffffff;
   width: 100%;
-  background: transparent;
-  color: #fff;
-  background: transparent;
   padding: 0 .5rem;
   position: relative;
   z-index: 9999;
+}
+
+.header.header--transparent {
+  color: #fff;
+  background: transparent;
 }
 
 .header__container {
@@ -161,6 +165,14 @@ p {
   background: #fff;
 }
 
+a.card,
+a.card:hover,
+a.card:active,
+a.card:focus,
+a.card:visited {
+  color: inherit;
+}
+
 .card__image {
   max-width: 100%;
   align-self: center;
@@ -223,19 +235,58 @@ p {
 /* ---------Footer-------- */
 
 .page__footer {
-  text-align: center;
+  display: flex;
   width: 100%;
-  padding: 1em;
-  color: #404040;
-  border-top: 1px solid #cccccc;
+  color: #ffffff;
+  background-color: #404040;
+  justify-content: center;
 }
 
+.footer-content {
+  display: grid;
+  width: 100%;
+  max-width: 40em;
+  padding: 1.5em 2em;
+  border-top: 1px solid #cccccc;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.page__footer ul,
 .page__footer p {
   margin: 0;
+  list-style: none;
+  padding: 0;
+}
+
+footer a {
+  text-decoration: none;
+}
+
+footer a:hover,
+footer a:active,
+footer a:focus {
+  text-decoration: underline;
+}
+
+footer a,
+footer a:hover,
+footer a:active,
+footer a:focus,
+footer a:visited {
+  color: inherit;
+  font-size: 0.8em;
+}
+
+.footer-col {
+  margin: 1em 0;
 }
 
 @media only screen and (max-width: 26.2em) {
   .hero {
     height: auto;
+  }
+
+  .footer-content {
+    grid-template-columns: 1fr;
   }
 }

@@ -30,9 +30,8 @@ h1, h2, h3 {
 
 .header {
   width: 100%;
-  background: transparent;
+  background: #404040;
   color: #fff;
-  background: transparent;
   padding: 0 1rem;
   position: relative;
   z-index: 9999;
@@ -48,7 +47,6 @@ h1, h2, h3 {
   display: block;
   color: inherit;
   text-decoration: none;
-  color: #414141;
 }
 
 .header .header__logo {
@@ -88,11 +86,58 @@ main {
 /* ---------Footer-------- */
 
 .page__footer {
-  text-align: center;
+  display: flex;
   width: 100%;
-  padding: 1em;
+  color: #ffffff;
+  background-color: #404040;
+  justify-content: center;
 }
 
+.footer-content {
+  display: grid;
+  width: 100%;
+  max-width: 40em;
+  padding: 1.5em 2em;
+  border-top: 1px solid #cccccc;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.page__footer ul,
 .page__footer p {
   margin: 0;
+  list-style: none;
+  padding: 0;
+}
+
+footer a {
+  text-decoration: none;
+}
+
+footer a:hover,
+footer a:active,
+footer a:focus {
+  text-decoration: underline;
+}
+
+footer a,
+footer a:hover,
+footer a:active,
+footer a:focus,
+footer a:visited {
+  color: inherit;
+  font-size: 0.8em;
+}
+
+.footer-col {
+  margin: 1em 0;
+}
+
+@media only screen and (max-width: 26.2em) {
+  .hero {
+    height: auto;
+  }
+
+  .footer-content {
+    grid-template-columns: 1fr;
+  }
 }
