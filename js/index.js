@@ -76,7 +76,6 @@
   window.addEventListener('resize', debounce(function() {
     onMouseMove({clientX: window.innerWidth/2, clientY: window.innerHeight/2});
     portrait = window.innerWidth < window.innerHeight;
-    console.log(portrait);
   }, 350));
 
 
