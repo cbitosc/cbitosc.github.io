@@ -1,3 +1,4 @@
+//these is the comment section
 #!/usr/bin/env node
 
 // https://github.com/GoogleChrome/devsummit/blob/master/validate/checklog.js
