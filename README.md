@@ -19,8 +19,8 @@ We feel that Open Source encourages students to learn, contibute and collaborate
 
 # Some of our previous events
 
-- CBIT Hacktoberfest Hackathon
-- Django Camp
+- CBIT Hacktoberfest Hackathon (https://hacktoberfest.cbit.org.in/)
+- Django Boot-Camp v2.0 (https://djangocamp.cbit.org.in)
 - Deep Learning Bootcamp
 - Python 101 session
   and many more .....
