@@ -7,7 +7,9 @@ rm -f *-log.json
 serv -p 5858 -d ../static/ >/dev/null &
 p="$!"
 
-wget http://127.0.0.1:5858/
+echo "Serving $(pwd)/../static/"
+
+wget http://localhost:5858/
 
 # quit if server fails to run
 if [[ -z "$p" ]]; then
@@ -22,7 +24,7 @@ lighthouse \
   --output=json --output-path=./lighthouse-log.json \
   --only-categories=accessibility,best-practices,performance,seo \
   --quiet --chrome-flags="--headless" \
-  http://127.0.0.1:5858/
+  http://localhost:5858/
 
 if [[ $? -gt 0 ]]; then
   echo "> Lighthouse failed to run"
