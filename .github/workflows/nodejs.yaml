@@ -10,10 +10,6 @@ jobs:
     - uses: actions/setup-node@v1
       with:
         node-version: '12.x'
-    #- name: Setup xvfb
-    #  run: |
-    #    - sudo systemctl start xvfb
-    #    - export DISPLAY=:99.0
     - name: Install packages
       run: |
         npm install -g @ramlmn/serv@0.8.0
@@ -27,5 +23,8 @@ jobs:
     - name: Run tests
       run: |
         ./test/runtest.sh
+    - name: Results
+      run: |
+        ./test/checklog.js ./lighthouse-log.json
       env:
         CI: true

@@ -27,9 +27,6 @@ if [[ $? -gt 0 ]]; then
   exit 1
 fi
 
-# check values
-echo "> Checking logs"
-./checklog.js ./lighthouse-log.json
 
 # kill the server
 kill $p
