@@ -7,6 +7,8 @@ rm -f *-log.json
 serv -p 5858 -d ../static/ >/dev/null &
 p="$!"
 
+wget http://127.0.0.1:5858/
+
 # quit if server fails to run
 if [[ -z "$p" ]]; then
   echo "> Failed to start server"
