@@ -14,7 +14,7 @@ jobs:
       run: |
         npm install -g @ramlmn/serv@0.8.0
         npm install -g lighthouse@5.5.0
-    - name: Setup chrome
+    - name: Setup Chrome for Lighthouse
       run: |
         export CHROME_PATH="$(pwd)/chrome-linux/chrome"
         npm explore -g lighthouse -- ./lighthouse-core/scripts/download-chrome.sh
