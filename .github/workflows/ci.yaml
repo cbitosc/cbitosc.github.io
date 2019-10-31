@@ -18,7 +18,7 @@ jobs:
       run: |
         export CHROME_PATH="$(pwd)/chrome-linux/chrome"
         npm explore -g lighthouse -- ./lighthouse-core/scripts/download-chrome.sh
-        mv $(npm root -g)/lighthouse/chrome-linux ./
+        mv "$(npm root -g)/lighthouse/chrome-linux" ./
         echo "Using $($CHROME_PATH --version)"
     - name: Run tests
       run: |
