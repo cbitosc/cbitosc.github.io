@@ -1,12 +1,10 @@
 #!/bin/bash
 
-$CHROME_PATH --version
-
 # remove logs
 rm -f *-log.json
 
 # run server and get its pid
-serv -p 5858 -d . >/dev/null &
+serv -p 5858 -d ./static >/dev/null &
 p="$!"
 
 # quit if server fails to run
@@ -29,9 +27,6 @@ if [[ $? -gt 0 ]]; then
   exit 1
 fi
 
-# check values
-echo "> Checking logs"
-./checklog.js ./lighthouse-log.json
 
 # kill the server
 kill $p

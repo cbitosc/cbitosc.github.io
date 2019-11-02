@@ -1,0 +1,30 @@
+name: Node CI
+
+on: [push]
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v1
+    - uses: actions/setup-node@v1
+      with:
+        node-version: '12.x'
+    - name: Install packages
+      run: |
+        npm install -g @ramlmn/serv@0.8.0
+        npm install -g lighthouse@5.5.0
+    - name: Setup Chrome for Lighthouse
+      run: |
+        export CHROME_PATH="$(pwd)/chrome-linux/chrome"
+        npm explore -g lighthouse -- ./lighthouse-core/scripts/download-chrome.sh
+        mv "$(npm root -g)/lighthouse/chrome-linux" ./
+        echo "Using $($CHROME_PATH --version)"
+    - name: Run tests
+      run: |
+        ./test/runtest.sh
+    - name: Results
+      run: |
+        ./test/checklog.js ./lighthouse-log.json
+      env:
+        CI: true
