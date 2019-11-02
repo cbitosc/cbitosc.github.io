@@ -1,6 +1,8 @@
-![COSC banner](img/banner.svg)
+![COSC banner](static/img/banner.svg)
 
-# COSC website
+---
+
+# [COSC](https://cosc.cbit.ac.in)
 
 COSC is an open source focused tech community based in Chaitanya Bharathi Institute of Technology - Hyderabad who conduct hackathons, bootcamps and workshops to teach students different technologies while promoting open source culture.
 
