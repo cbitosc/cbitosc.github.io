@@ -4,7 +4,7 @@
 rm -f *-log.json
 
 # run server and get its pid
-serv -p 5858 -d ./static >/dev/null &
+serv -p 5858 -d ./_site >/dev/null &
 p="$!"
 
 # quit if server fails to run
