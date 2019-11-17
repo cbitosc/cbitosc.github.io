@@ -1,0 +1,6 @@
+# exclude all
+*
+
+# include only needed
+!_site
+!now.json

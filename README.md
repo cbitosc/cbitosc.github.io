@@ -1,4 +1,4 @@
-![COSC banner](static/img/banner.svg)
+![COSC banner](_site/img/banner.svg)
 
 ---
 
