@@ -1,0 +1,146 @@
+* {
+  box-sizing: border-box;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+*::before, *::after {
+  box-sizing: inherit;
+}
+
+html,
+body {
+  margin: 0;
+  font-family: 'Open Sans', -apple-system, system-ui, BlinkMacSystemFont, 'Segoe UI',
+    Roboto, 'Helvetica Neue', Arial, sans-serif;
+  color: #212121;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+p {
+  margin: 0.5em 0 0;
+}
+
+h1, h2, h3 {
+  margin-bottom: 0;
+  font-weight: 500;
+}
+
+/*--------------- header ---------------*/
+
+.header {
+  width: 100%;
+  background: #212121;
+  color: #fff;
+  position: relative;
+  z-index: 9999;
+}
+
+.header__container {
+  display: flex;
+  max-width: 50em;
+  padding: 0 1rem;
+  margin: auto;
+}
+
+.header a {
+  display: block;
+  color: inherit;
+  text-decoration: none;
+}
+
+.header .header__logo {
+  line-height: 3rem;
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+.header .header__spacer {
+  flex: 1;
+}
+
+.header .header-nav__list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+}
+
+.header .header-nav__list-item {
+  margin-left: .5rem;
+}
+
+.header .header-nav__list-item a {
+  line-height: 3rem;
+  padding: 0 .5rem;
+}
+
+
+main {
+  max-width: 50em;
+  padding: 0 1em;
+  margin: 0 auto 3em;
+}
+
+
+/* ---------Footer-------- */
+
+.page__footer {
+  display: flex;
+  width: 100%;
+  color: #ffffff;
+  background-color: #212121;
+  justify-content: center;
+}
+
+.footer-content {
+  display: grid;
+  width: 100%;
+  max-width: 52em;
+  padding: 2em 2em;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.page__footer ul,
+.page__footer p {
+  margin: 0;
+  list-style: none;
+  padding: 0;
+}
+
+footer a {
+  text-decoration: none;
+}
+
+footer a:hover,
+footer a:active,
+footer a:focus {
+  text-decoration: underline;
+}
+
+footer a,
+footer a:hover,
+footer a:active,
+footer a:focus,
+footer a:visited {
+  color: inherit;
+  font-size: 0.8em;
+}
+
+.footer-col h4 {
+  margin: 0.5em 0;
+}
+
+@media only screen and (max-width: 36em) {
+  .hero {
+    height: auto;
+  }
+
+  .footer-content {
+    grid-template-columns: 1fr;
+  }
+
+  main .section {
+    font-size: 16px;
+  }
+}
