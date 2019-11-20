@@ -4,11 +4,11 @@
 
 # [COSC](https://cosc.cbit.ac.in)
 
-COSC is an open source focused tech community based in Chaitanya Bharathi Institute of Technology - Hyderabad who conduct hackathons, bootcamps and workshops to teach students different technologies while promoting open source culture.
+COSC is an open source focused tech community based in Chaitanya Bharathi Institute of Technology - Hyderabad who conduct hackathons, bootcamps and workshops to teach different technologies to students while promoting open source culture.
 
-We are a group of open source enthusiasts who use and promote open source software. We, students, conduct sessions on different open source software and technologies, and teach our students about them and encourage them to use it.
+We are a group of open source enthusiasts who use and promote open source software. We, students, conduct sessions on different open source software and technologies, teach our students about them and encourage to use them.
 
-We feel that Open Source encourages students to learn, contibute and collaborate. It provides students insight into better software and also helps to work on them.
+We feel that open source encourages students to learn, contribute and collaborate. It provides students with an insight into better software and also helps them to work on it.
 
 ## Fields we are acquainted with
 
