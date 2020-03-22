@@ -145,7 +145,6 @@ main .section.section--dark {
 .notes_head{
   background-color: #03a9f4;
   color: #fff;
-  font-family: 'Raleway', sans-serif;
 }
 .button {
   color: #fff;
@@ -159,18 +158,18 @@ main .section.section--dark {
   margin-left: 100px;
   margin-right: 100px;
   transition: all 0.4s ease 0s;
-  }
-  .button:hover {
-    color:  #03a9f4;
-    background: #fff;
-    border-color: #fff;
-    border-radius: 10px;
-    padding-left: 17px;
-    padding-right: 17px;
-    margin-left: 90px;
-    margin-right: 90px;
-    transition: all 0.4s ease 0s;
-    }
+}
+.button:hover {
+  color:  #03a9f4;
+  background: #fff;
+  border-color: #fff;
+  border-radius: 10px;
+  padding-left: 17px;
+  padding-right: 17px;
+  margin-left: 90px;
+  margin-right: 90px;
+  transition: all 0.4s ease 0s;
+}
 
 /* Winners */
 .cardw {
