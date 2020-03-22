@@ -147,23 +147,23 @@ main .section.section--dark {
   color: #fff;
   font-family: 'Raleway', sans-serif;
 }
-.example_c {
+.button {
   color: #fff;
   text-decoration: none;
-  background: #ffffff00;
+  background: #03a9f4;
   padding: 7px;
   padding-bottom: 6px;
-  border: 2px solid #ffffff00;
+  border: 2px solid #03a9f4;
   display: inline-block;
   border-radius: 5px;
   margin-left: 100px;
   margin-right: 100px;
   transition: all 0.4s ease 0s;
   }
-  .example_c:hover {
+  .button:hover {
     color:  #03a9f4;
     background: #fff;
-    border-color: #ffff;
+    border-color: #fff;
     border-radius: 10px;
     padding-left: 17px;
     padding-right: 17px;
