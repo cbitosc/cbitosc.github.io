@@ -23,6 +23,8 @@ try {
     ''
   ].join('\n'));
 
+  console.log('Download "lighthouse-log.json" from artifacts above and run it through https://googlechrome.github.io/lighthouse/viewer/ to visualize the results.');
+
   if (accessibility.score < A11Y_MIN_SCORE
     || performance.score < PERF_MIN_SCORE
     || seo.score < SEO_MIN_SCORE
