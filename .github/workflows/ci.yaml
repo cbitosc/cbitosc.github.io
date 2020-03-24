@@ -23,13 +23,13 @@ jobs:
     - name: Run Tests
       run: |
         ./test/runtest.sh
-    - name: Results
-      run: |
-        ./test/checklog.js ./lighthouse-log.json
-      env:
-        CI: true
     - name: Upload Artifacts
       uses: actions/upload-artifact@v1
       with:
         name: lighthouse-log.json
         path: ./lighthouse-log.json
+    - name: Results
+      run: |
+        ./test/checklog.js ./lighthouse-log.json
+      env:
+        CI: true
