@@ -10,17 +10,17 @@ jobs:
     - uses: actions/setup-node@v1
       with:
         node-version: '12.x'
-    - name: Install packages
+    - name: Install Packages
       run: |
-        npm install -g @ramlmn/serv@0.8.0
-        npm install -g lighthouse@5.6.0
+        npm install -g @ramlmn/serv@0.x
+        npm install -g lighthouse@5.x
     - name: Setup Chrome for Lighthouse
       run: |
         export CHROME_PATH="$(pwd)/chrome-linux/chrome"
         npm explore -g lighthouse -- ./lighthouse-core/scripts/download-chrome.sh
         mv "$(npm root -g)/lighthouse/chrome-linux" ./
         echo "Using $($CHROME_PATH --version)"
-    - name: Run tests
+    - name: Run Tests
       run: |
         ./test/runtest.sh
     - name: Results
@@ -28,3 +28,7 @@ jobs:
         ./test/checklog.js ./lighthouse-log.json
       env:
         CI: true
+    - uses: actions/upload-artifact@v1
+        with:
+          name: lighthouse-log.json
+          path: ./lighthouse-log.json
