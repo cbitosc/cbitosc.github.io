@@ -28,7 +28,8 @@ jobs:
         ./test/checklog.js ./lighthouse-log.json
       env:
         CI: true
-    - uses: actions/upload-artifact@v1
-        with:
-          name: lighthouse-log.json
-          path: ./lighthouse-log.json
+    - name: Upload Artifacts
+      uses: actions/upload-artifact@v1
+      with:
+        name: lighthouse-log.json
+        path: ./lighthouse-log.json
