@@ -350,9 +350,7 @@ footer a:visited {
 }
 .upevent-img{
   margin:20px;
-  margin-left: 35%; 
-  width: 30%;
-  margin-right: 35%;
+  width: 210px;
 }
 .upevent-img:hover{
   box-shadow: 2px 2px 5px black;
@@ -362,9 +360,7 @@ footer a:visited {
   -moz-appearance: button;
   appearance: button;
   margin:5px;
-  margin-left: 35%; 
-  width: 30%;
-  margin-right: 35%;
+  width: 210px;
   text-align: center;
   padding: 10px;
   font-size: medium;
@@ -377,9 +373,6 @@ footer a:visited {
 }
 .reg-btn:hover{
   background-color: #0185c2;
+  width: 235px;
   padding: 12.5px;
-  margin: 2.5px;
-  margin-left: 33%; 
-  width: 34%;
-  margin-right: 33%;
 }
