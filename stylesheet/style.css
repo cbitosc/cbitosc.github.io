@@ -348,3 +348,38 @@ footer a:visited {
     font-size: 16px;
   }
 }
+.upevent-img{
+  margin:20px;
+  margin-left: 35%; 
+  width: 30%;
+  margin-right: 35%;
+}
+.upevent-img:hover{
+  box-shadow: 2px 2px 5px black;
+}
+.reg-btn{
+  -webkit-appearance: button;
+  -moz-appearance: button;
+  appearance: button;
+  margin:5px;
+  margin-left: 35%; 
+  width: 30%;
+  margin-right: 35%;
+  text-align: center;
+  padding: 10px;
+  font-size: medium;
+  background-color: #03a9f4;
+  text-decoration: none;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  transition: ease .2s;
+}
+.reg-btn:hover{
+  background-color: #0185c2;
+  padding: 12.5px;
+  margin: 2.5px;
+  margin-left: 33%; 
+  width: 34%;
+  margin-right: 33%;
+}
