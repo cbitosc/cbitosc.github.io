@@ -1133,7 +1133,7 @@ section {
   border-radius: 50px;
   width: 36px;
   height: 36px;
-  background: rgba(239, 102, 3, 0.8);
+  background: #F74700;
   transition: ease-in-out 0.3s;
   color: #fff;
   display: inline-flex;
@@ -1141,7 +1141,7 @@ section {
   justify-content: center;
 }
 .team .member .social a:hover {
-  background: #fc8129;
+  background: #ce6113;
 }
 .team .member .social i {
   font-size: 18px;
