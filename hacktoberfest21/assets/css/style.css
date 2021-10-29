@@ -658,7 +658,7 @@ section {
 # Services
 --------------------------------------------------------------*/
 .services{
-  background-color: #91A88C;
+  background-color: #A88771;
   color:  #2B3531;
 }
 .services .icon-box {
@@ -667,14 +667,14 @@ section {
   overflow: hidden;
   border-radius: 10px;
   background: #fff;
-  box-shadow: 0 1px 15px 0 gray;
+  box-shadow: 0 1px 15px 0 black;
   transition: all 0.2s ease-in-out;
   width: 100%;
   height: 100%;
 }
 .services .icon-box:hover {
   transform: translateY(-10px);
-  box-shadow: 0 2px 35px 0 black;
+  box-shadow: 0 2px 35px 0 gray;
 }
 .services .icon {
   position: absolute;
@@ -709,6 +709,9 @@ section {
 /*--------------------------------------------------------------
 # Portfolio
 --------------------------------------------------------------*/
+.portfolio{
+  background: #91A88C;
+}
 .portfolio #portfolio-flters {
   list-style: none;
   margin-bottom: 20px;
@@ -787,7 +790,7 @@ section {
   transition: 0.3s;
 }
 .portfolio .portfolio-item .portfolio-info .preview-link:hover, .portfolio .portfolio-item .portfolio-info .details-link:hover {
-  color: #fd9f5b;
+  color: #ef6603;
 }
 .portfolio .portfolio-item .portfolio-info .details-link {
   right: 10px;
@@ -809,7 +812,7 @@ section {
   transition: 0.3s;
 }
 .portfolio .portfolio-item .portfolio-links a:hover {
-  color: #fd9f5b;
+  color: #ef6603;
 }
 .portfolio .portfolio-item:hover .portfolio-img img {
   transform: scale(1.2);
@@ -821,7 +824,7 @@ section {
 /*--------------------------------------------------------------
 # Portfolio Details
 --------------------------------------------------------------*/
-.portfolio-details {
+/*.portfolio-details {
   padding-top: 40px;
 }
 .portfolio-details .portfolio-details-slider img {
@@ -871,10 +874,13 @@ section {
 .portfolio-details .portfolio-description p {
   padding: 0;
 }
-
+*/
 /*--------------------------------------------------------------
 # Testimonials
 --------------------------------------------------------------*/
+.testimonials{
+  background: white;
+}
 .testimonials .testimonials-carousel, .testimonials .testimonials-slider {
   overflow: hidden;
 }
