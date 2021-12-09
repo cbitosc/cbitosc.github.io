@@ -236,7 +236,7 @@ a.card:visited {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  background-color: #888888;
+  background-color: #fff;
 }
 
 .section-past .event.card {
