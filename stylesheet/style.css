@@ -340,6 +340,9 @@ footer a:visited {
     height: auto;
   }
 
+  #dummy{
+    display: none;
+  } 
   .footer-content {
     grid-template-columns: 1fr;
   }
