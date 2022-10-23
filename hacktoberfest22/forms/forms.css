@@ -1,16 +1,16 @@
 a:hover {
-    color: red;
+    color: #64e3ff;
     background-color: transparent;
     text-decoration: underline;
 }
 
 .ContactUs {
-    width: 600px;
+    width: auto;
 }
 
 .ContactContainer {
     width: 100%;
-    margin-left: 28%;
+    margin-left: 24.5%;
 }
 
 @media screen and (max-width: 1050px) {
@@ -25,7 +25,7 @@ a:hover {
     }
 
     .ContactUs {
-        width: 400px;
+        width: auto;
     }
 }
 
@@ -34,6 +34,6 @@ a:hover {
         margin-left: 0px;
     }
     .ContactUs {
-        width: 320px;
+        width: auto;
     }
 }
