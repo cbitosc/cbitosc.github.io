@@ -3297,3 +3297,31 @@ section .card .image img {
 #em:hover {
     color: #64e3ff;
 }
+
+.SI {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 300px;
+    margin-bottom: 3%;
+}
+
+.flex-sponsor {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.spon-img {
+    width: 250px;
+}
+
+@media only screen and (max-width: 400px) {
+    .flex-sponsor {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+}
