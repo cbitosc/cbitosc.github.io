@@ -3325,3 +3325,13 @@ section .card .image img {
         justify-content: space-evenly;
     }
 }
+
+.panel {
+    background-color: #64e3ff;
+    padding: 0%;
+}
+
+.img-panel {
+    height: 200px;
+    width: 180px;
+}
