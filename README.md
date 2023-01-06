@@ -30,6 +30,7 @@ We feel that open source encourages students to learn, contribute and collaborat
 
 - Instagram - https://www.instagram.com/cbitosc
 - Medium - https://medium.com/cosc
+- Discord - https://discord.com/invite/gpWww5hnWK
 - Twitter - https://twitter.com/cbitosc
 - GitHub - https://github.com/cbitosc
 - Facebook - https://www.facebook.com/cbitosc
