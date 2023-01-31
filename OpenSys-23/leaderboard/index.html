@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en" title="Coding design">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Event Leaderboard</title>
+    <link rel="icon" type="image/x-icon" href="/images/OpenSys.png">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <center>
+    <main class="table">
+        <section class="table__header">
+            <h1>Leaderboard</h1>
+            <div class="export__file">
+                <label for="export-file" class="export__file-btn" title="Export File"></label>
+                <input type="checkbox" id="export-file">
+                <div class="export__file-options">
+                    <label>Export as &nbsp; &#10140;</label>
+                    <label for="export-file" onclick="export_data()" value="Export">EXCEL <img src="images/excel.png" alt=""></label>
+                </div>
+            </div>
+        </section>
+        <section class="table__body">
+            <table id="show">
+                <thead>
+                    <tr>
+                        <th> Rank<span class="icon-arrow">&UpArrow;</span></th>
+                        <th> Name <span class="icon-arrow">&UpArrow;</span></th>
+                        <th> Accuracy <span class="icon-arrow">&UpArrow;</span></th>
+                    </tr>
+                </thead>
+                <tbody id="leaderboard-body">
+                </tbody>
+            </table>
+        </section>
+    </main>
+    <main class="table-1" style="display:flex;">
+    <form style="display:flex;">
+        <div style="display:flex;">
+            <h3 style="margin-top:.5rem">Name:</h3>
+            <input type="text" name="fname" id="fname" class="test">
+        </div>
+
+        <div style="display:flex;">
+            <h3 style="margin-top:.5rem">Accuracy:</h3>
+            <input type="text" name="score" id="score" class="test">
+        </div>
+        
+    </form>  
+        <button name="button" id="btn" onclick="addToLeaderboard()" class="but">ADD</button>
+    </main>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.17.0/xlsx.full.min.js"></script>
+    <script src="script.js"></script>
+</center>
+</body>
+
+</html>
