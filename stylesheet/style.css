@@ -363,6 +363,7 @@ footer a:visited {
   -moz-appearance: button;
   appearance: button;
   margin:5px;
+  margin-top: 10px;
   width: 210px;
   text-align: center;
   padding: 10px;
