@@ -21,6 +21,7 @@ We feel that open source encourages students to learn, contribute and collaborat
 
 ## Some of our previous events
 
+- [HackWeek](https://cosc-hackweek.vercel.app/)
 - Git & GitHub Workshop 
 - [OpenSys'25](https://opensys2025.vercel.app/)
 - GSOC Awareness Session 2025
