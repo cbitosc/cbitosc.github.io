@@ -393,7 +393,14 @@ footer a:visited {
 .section-projects, .section-archive {
   margin: 2rem 0;
 }
-
+.project_card__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+  border-bottom: 2px solid #03a9f4;
+  padding-bottom: 0.5rem;
+}
 .project.card {
   background: #fff;
   max-width: 50rem;
@@ -418,7 +425,7 @@ footer a:visited {
   justify-content: space-between;
   align-items: center;
   margin-bottom: 1rem;
-  border-bottom: 2px solid #03a9f4;
+  /* border-bottom: 2px solid #03a9f4; */
   padding-bottom: 0.5rem;
 }
 
@@ -574,10 +581,10 @@ footer a:visited {
   transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
-.event.card:hover {
+/* .event.card:hover {
   transform: translateX(5px);
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
-}
+} */
 
 .status-archived {
   background: #ffa726;
