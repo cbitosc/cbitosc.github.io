@@ -1,310 +1,436 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-  <title>Projects | CBIT Open Source Community</title>
-  <meta name="description" content="COSC is an open source community based in CBIT and is managed by its students and staff">
+    <title>Projects | CBIT Open Source Community</title>
+    <meta
+      name="description"
+      content="COSC is an open source community based in CBIT and is managed by its students and staff"
+    />
 
-  <meta property="og:title" content="CBIT Open Source Community - COSC">
-  <meta property="og:type" content="website">
-  <meta property="og:url" content="https://cbitosc.github.io/">
-  <meta property="og:image" content="https://cbitosc.github.io../img/touch/logo_256.png">
-  <meta property="og:description" content="COSC is an open source community based in CBIT and is managed by its students and staff">
+    <meta property="og:title" content="CBIT Open Source Community - COSC" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://cbitosc.github.io/" />
+    <meta
+      property="og:image"
+      content="https://cbitosc.github.io../img/touch/logo_256.png"
+    />
+    <meta
+      property="og:description"
+      content="COSC is an open source community based in CBIT and is managed by its students and staff"
+    />
 
-  <meta name="twitter:title" content="CBIT Open Source Community - COSC">
-  <meta name="twitter:card" content="summary">
-  <meta name="twitter:url" content="https://cbitosc.github.io/">
-  <meta name="twitter:image" content="https://cbitosc.github.io../img/touch/logo_256.png">
-  <meta name="twitter:description" content="COSC is an open source community based in CBIT and is managed by its students and staff">
-  <meta name="twitter:creator" content="@r0mflip">
+    <meta name="twitter:title" content="CBIT Open Source Community - COSC" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:url" content="https://cbitosc.github.io/" />
+    <meta
+      name="twitter:image"
+      content="https://cbitosc.github.io../img/touch/logo_256.png"
+    />
+    <meta
+      name="twitter:description"
+      content="COSC is an open source community based in CBIT and is managed by its students and staff"
+    />
+    <meta name="twitter:creator" content="@r0mflip" />
 
-  <link rel="icon" href="../img/touch/logo_64.png">
-  <link rel="apple-touch-icon" sizes="64x64" href="../img/touch/logo_64.png">
-  <link rel="apple-touch-icon" sizes="192x192" href="../img/touch/logo_192.png">
-  <link rel="apple-touch-icon" sizes="256x256" href="../img/touch/logo_256.png">
+    <link rel="icon" href="../img/touch/logo_64.png" />
+    <link
+      rel="apple-touch-icon"
+      sizes="64x64"
+      href="../img/touch/logo_64.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="192x192"
+      href="../img/touch/logo_192.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="256x256"
+      href="../img/touch/logo_256.png"
+    />
 
-  <meta name="theme-color" content="#212121">
+    <meta name="theme-color" content="#212121" />
 
-  <link rel="preload" href="../stylesheet/style.css" as="style">
-  <link rel="preload" href="../js/index.js" as="script">
-  <link rel="preload" href="../img/banner_group_1.svg" as="image" type="image/svg+xml">
-  <link rel="preload" href="../img/banner_group_2.svg" as="image" type="image/svg+xml">
-  <link rel="preload" href="../img/banner_group_3.svg" as="image" type="image/svg+xml">
+    <link rel="preload" href="../stylesheet/style.css" as="style" />
+    <link rel="preload" href="../js/index.js" as="script" />
+    <link
+      rel="preload"
+      href="../img/banner_group_1.svg"
+      as="image"
+      type="image/svg+xml"
+    />
+    <link
+      rel="preload"
+      href="../img/banner_group_2.svg"
+      as="image"
+      type="image/svg+xml"
+    />
+    <link
+      rel="preload"
+      href="../img/banner_group_3.svg"
+      as="image"
+      type="image/svg+xml"
+    />
 
-  <link rel="stylesheet" href="../stylesheet/style.css">
-</head>
-<body>
+    <link rel="stylesheet" href="../stylesheet/style.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="header__container">
+        <div class="header__left">
+          <div class="header__logo">
+            <a href="/">COSC</a>
+          </div>
+        </div>
+        <div class="header__spacer"></div>
+        <div class="header__right">
+          <nav class="header-nav">
+            <ul class="header-nav__list">
+              <li class="header-nav__list-item">
+                <a
+                  href="https://github.com/cbitosc"
+                  target="_blank"
+                  rel="noopener"
+                  >GitHub</a
+                >
+              </li>
 
-  <header class="header">
-    <div class="header__container">
-      <div class="header__left">
-        <div class="header__logo">
-          <a href="/">COSC</a>
+              <li class="header-nav__list-item">
+                <a href="/coc">COC</a>
+              </li>
+              <li class="header-nav__list-item">
+                <a href="/about">About </a>
+              </li>
+            </ul>
+          </nav>
         </div>
       </div>
-      <div class="header__spacer"></div>
-      <div class="header__right">
-        <nav class="header-nav">
-          <ul class="header-nav__list">
-            <li class="header-nav__list-item">
-              <a href="https://github.com/cbitosc" target="_blank" rel="noopener">GitHub</a>
-            </li>
-          
-            <li class="header-nav__list-item">
-              <a href="/coc">COC</a>
-            </li>
-            <li class="header-nav__list-item">
-              <a href="/about">About </a>
-            </li>
-          </ul>
-        </nav>
-      </div>
-    </div>
-  </header>
+    </header>
 
-  <main class="main">
-    <section class="section section-about">
-      <div class="section__content">
-        <h2 class="section__header">COSC Projects</h2>
-        <p style="text-align: justify;">Welcome to our comprehensive showcase of technical achievements! This page highlights the innovative tools and event websites created by our community members. From practical utilities that enhance productivity to engaging event platforms that bring the community together, these projects represent the collaborative spirit and technical excellence of the CBIT Open Source Community.</p>
-      </div>
-    </section>
+    <main class="main">
+      <section class="section section-about">
+        <div class="section__content">
+          <h2 class="section__header">COSC Projects</h2>
+          <p style="text-align: justify">
+            Welcome to our comprehensive showcase of technical achievements!
+            This page highlights the innovative tools and event websites created
+            by our community members. From practical utilities that enhance
+            productivity to engaging event platforms that bring the community
+            together, these projects represent the collaborative spirit and
+            technical excellence of the CBIT Open Source Community.
+          </p>
+        </div>
+      </section>
 
-    <section class="section section-projects">
-      <div class="section__content">
-        <h2 class="section__header">Community Tools</h2>
-        <p style="text-align: justify;">Explore the powerful tools built by our community members to solve real-world problems and enhance productivity.</p>
-        
-        <div class="cards">
-          <div class="project card">
-            <div class="card__header">
-                <a href="https://github.com/cbitosc/qr-certificate-generator" target="_blank" rel="noopener" class="archived_event_title">Qr Certificate Generator</a>
-         
-            </div>
-            <div class="card__description">
-              <p>A comprehensive web application for generating verifiable certificates with QR codes. Built with Next.js and FastAPI, this tool enables bulk certificate generation with GitHub Pages integration for hosting and verification.</p>
-              
-              <div class="card__features">
-                <h4>Key Features:</h4>
-                <ul>
-                  <li>Bulk certificate generation from Excel data</li>
-                  <li>QR code integration for certificate verification</li>
-                  <li>GitHub Pages deployment for hosting</li>
-                  <li>Drag-and-drop positioning for text and QR codes</li>
-                  <li>Support for PNG/JPG templates and SVG conversion</li>
-                  <li>Dark/Light theme support</li>
-                </ul>
+      <section class="section section-projects">
+        <div class="section__content">
+          <h2 class="section__header">Community Tools</h2>
+          <p style="text-align: justify">
+            Explore the powerful tools built by our community members to solve
+            real-world problems and enhance productivity.
+          </p>
+
+          <div class="project_cards">
+            <div class="project card">
+              <div class="card__header">
+                <a
+                  href="https://github.com/cbitosc/qr-certificate-generator"
+                  target="_blank"
+                  rel="noopener"
+                  class="archived_event_title"
+                  >Qr Certificate Generator</a
+                >
               </div>
+              <div class="card__description">
+                <p>
+                  A comprehensive web application for generating verifiable
+                  certificates with QR codes. Built with Next.js and FastAPI,
+                  this tool enables bulk certificate generation with GitHub
+                  Pages integration for hosting and verification.
+                </p>
 
-              <div class="card__tech-stack">
-                <h4>Tech Stack:</h4>
-                <div class="tech-tags">
-                  <span class="tech-tag">Next.js</span>
-                  <span class="tech-tag">TypeScript</span>
-                  <span class="tech-tag">FastAPI</span>
-                  <span class="tech-tag">Python</span>
-                  <span class="tech-tag">Tailwind CSS</span>
-                  <span class="tech-tag">React Konva</span>
-                  <span class="tech-tag">AG Grid</span>
+                <div class="card__features">
+                  <h4>Key Features:</h4>
+                  <ul>
+                    <li>Bulk certificate generation from Excel data</li>
+                    <li>QR code integration for certificate verification</li>
+                    <li>GitHub Pages deployment for hosting</li>
+                    <li>Drag-and-drop positioning for text and QR codes</li>
+                    <li>Support for PNG/JPG templates and SVG conversion</li>
+                    <li>Dark/Light theme support</li>
+                  </ul>
                 </div>
-              </div>
 
-              <div class="card__contributors">
-                <h4>Main Contributors:</h4>
-                <div class="contributors">
-                  <a href="https://github.com/muzaffarmhd" target="_blank" rel="noopener">@muzaffarmhd</a>
-                  <a href="https://github.com/mdimado" target="_blank" rel="noopener">@mdimado</a>
-                  <a href="https://github.com/gjaynir0508" target="_blank" rel="noopener">@gjaynir0508</a>
+                <div class="card__tech-stack">
+                  <h4>Tech Stack:</h4>
+                  <div class="tech-tags">
+                    <span class="tech-tag">Next.js</span>
+                    <span class="tech-tag">TypeScript</span>
+                    <span class="tech-tag">FastAPI</span>
+                    <span class="tech-tag">Python</span>
+                    <span class="tech-tag">Tailwind CSS</span>
+                    <span class="tech-tag">React Konva</span>
+                    <span class="tech-tag">AG Grid</span>
+                  </div>
+                </div>
+
+                <div class="card__contributors">
+                  <h4>Main Contributors:</h4>
+                  <div class="contributors">
+                    <a
+                      href="https://github.com/muzaffarmhd"
+                      target="_blank"
+                      rel="noopener"
+                      >@muzaffarmhd</a
+                    >
+                    <a
+                      href="https://github.com/mdimado"
+                      target="_blank"
+                      rel="noopener"
+                      >@mdimado</a
+                    >
+                    <a
+                      href="https://github.com/gjaynir0508"
+                      target="_blank"
+                      rel="noopener"
+                      >@gjaynir0508</a
+                    >
+                  </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <section class="section section-archive">
-      <div class="section__content">
-        <h2 class="section__header">Event Websites Archive</h2>
-        <p style="text-align: justify;">A chronological showcase of event websites created by our community, highlighting the evolution of our technical skills and design aesthetics.</p>
-        
-        <div class="timeline">
-          <div class="timeline-item">
-            <div class="timeline-year">2025</div>
-            <div class="events">
-              <div class="event card">
-                <div class="card__header">
-                  <a class="archived_event_title" href="https://cosc-hackweek.vercel.app/" target="_blank" rel="noopener">HackWeek 2025</a>
-                </div>
-                <div class="card__description">
-                  <p>A comprehensive week-long hackathon platform featuring multiple tracks, real-time updates, and interactive participant engagement.</p>
-                  <div class="card__tech-stack">
-                    <h4>Tech Stack:</h4>
-                    <div class="tech-tags">
-                      <span class="tech-tag">Next.js</span>
-                      <span class="tech-tag">React</span>
-                      <span class="tech-tag">Vercel</span>
+      <section class="section section-archive">
+        <div class="section__content">
+          <h2 class="section__header">Event Websites Archive</h2>
+          <p style="text-align: justify">
+            A chronological showcase of event websites created by our community,
+            highlighting the evolution of our technical skills and design
+            aesthetics.
+          </p>
+
+          <div class="timeline">
+            <div class="timeline-item">
+              <div class="timeline-year">2025</div>
+              <div class="events">
+                <div class="event card">
+                  <div class="card__header">
+                    <a
+                      class="archived_event_title"
+                      href="https://cosc-hackweek.vercel.app/"
+                      target="_blank"
+                      rel="noopener"
+                      >HackWeek 2025</a
+                    >
+                  </div>
+                  <div class="card__description">
+                    <p>
+                      A comprehensive week-long hackathon platform featuring
+                      multiple tracks, real-time updates, and interactive
+                      participant engagement.
+                    </p>
+                    <div class="card__tech-stack">
+                      <h4>Tech Stack:</h4>
+                      <div class="tech-tags">
+                        <span class="tech-tag">Next.js</span>
+                        <span class="tech-tag">React</span>
+                        <span class="tech-tag">Vercel</span>
+                      </div>
+                    </div>
+                    <div class="card__contributors">
+                      <h4>Contributors:</h4>
+                      <div class="contributors">
+                        <a href="/projects#team-2024-25">Team 2024-25</a>
+                      </div>
                     </div>
                   </div>
-                  <div class="card__contributors">
-                    <h4>Contributors:</h4>
-                    <div class="contributors">
-                      <a href="/projects#team-2024-25">Team 2024-25</a>
-                    </div>
-                  </div>
                 </div>
-              </div>
 
-              <div class="event card">
-                <div class="card__header">
-                  <a class="archived_event_title" href="https://opensys2025.vercel.app/" target="_blank" rel="noopener">OpenSys 2025</a>
-                  <!-- <div class="card__links">
+                <div class="event card">
+                  <div class="card__header">
+                    <a
+                      class="archived_event_title"
+                      href="https://opensys2025.vercel.app/"
+                      target="_blank"
+                      rel="noopener"
+                      >OpenSys 2025</a
+                    >
+                    <!-- <div class="card__links">
                     <a href="https://opensys2025.vercel.app/" target="_blank" rel="noopener">Visit Site</a>
                   </div> -->
-                </div>
-                <div class="card__description">
-                  <p>The Open-Source Symposium featuring multiple competitive events including Mazerift, Decipher, and Odyssey with interactive registrations and real-time updates.</p>
-                  <div class="card__tech-stack">
-                    <h4>Tech Stack:</h4>
-                    <div class="tech-tags">
-                      <span class="tech-tag">React</span>
-                      <span class="tech-tag">Vercel</span>
-                      <span class="tech-tag">CSS3</span>
-                    </div>
                   </div>
-                  <div class="card__contributors">
-                    <h4>Contributors:</h4>
-                    <div class="contributors">
-                      <a href="/projects#team-2024-25">Team 2024-25</a>
+                  <div class="card__description">
+                    <p>
+                      The Open-Source Symposium featuring multiple competitive
+                      events including Mazerift, Decipher, and Odyssey with
+                      interactive registrations and real-time updates.
+                    </p>
+                    <div class="card__tech-stack">
+                      <h4>Tech Stack:</h4>
+                      <div class="tech-tags">
+                        <span class="tech-tag">React</span>
+                        <span class="tech-tag">Vercel</span>
+                        <span class="tech-tag">CSS3</span>
+                      </div>
+                    </div>
+                    <div class="card__contributors">
+                      <h4>Contributors:</h4>
+                      <div class="contributors">
+                        <a href="/projects#team-2024-25">Team 2024-25</a>
+                      </div>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
-          </div>
 
-          <div class="timeline-item">
-            <div class="timeline-year">2024</div>
-            <div class="events">
-              <div class="event card">
-                <div class="card__header">
- <a class="archived_event_title" href="https://cbit-hacktoberfest24.vercel.app/" target="_blank" rel="noopener">CBIT Hacktoberfest 24</a>
+            <div class="timeline-item">
+              <div class="timeline-year">2024</div>
+              <div class="events">
+                <div class="event card">
+                  <div class="card__header">
+                    <a
+                      class="archived_event_title"
+                      href="https://cbit-hacktoberfest24.vercel.app/"
+                      target="_blank"
+                      rel="noopener"
+                      >CBIT Hacktoberfest 24</a
+                    >
 
-                  <!-- <div class="card__links">
+                    <!-- <div class="card__links">
                     <a href="" target="_blank" rel="noopener">Visit Site</a>
                   </div> -->
-                </div>
-                <div class="card__description">
-                  <p>A celebration of open source featuring a 24-hour hackathon with Preptember preparation month, mentor showcases, and comprehensive event timeline.</p>
-                  <div class="card__tech-stack">
-                    <h4>Tech Stack:</h4>
-                    <div class="tech-tags">
-                      <span class="tech-tag">React</span>
-                      <span class="tech-tag">Next.js</span>
-                      <span class="tech-tag">Vercel</span>
-                      <span class="tech-tag">CSS3</span>
-                    </div>
                   </div>
-                  <div class="card__contributors">
-                    <h4>Contributors:</h4>
-                    <div class="contributors">
-                      <a href="/projects#team-2023-24">Team 2023-24</a>
+                  <div class="card__description">
+                    <p>
+                      A celebration of open source featuring a 24-hour hackathon
+                      with Preptember preparation month, mentor showcases, and
+                      comprehensive event timeline.
+                    </p>
+                    <div class="card__tech-stack">
+                      <h4>Tech Stack:</h4>
+                      <div class="tech-tags">
+                        <span class="tech-tag">React</span>
+                        <span class="tech-tag">Next.js</span>
+                        <span class="tech-tag">Vercel</span>
+                        <span class="tech-tag">CSS3</span>
+                      </div>
                     </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="timeline-item">
-            <div class="timeline-year">2023</div>
-            <div class="events">
-              <div class="event card">
-                <div class="card__header">
-                  <h3>OpenSys 2023</h3>
-                  <!-- <div class="card__links">
-                    <span class="status-archived">Archived</span>
-                  </div> -->
-                </div>
-                <div class="card__description">
-                  <p>The third edition of OpenSys featuring multiple technical events and competitions for the CBIT community.</p>
-                  <div class="card__tech-stack">
-                    <h4>Tech Stack:</h4>
-                    <div class="tech-tags">
-                      <span class="tech-tag">HTML5</span>
-                      <span class="tech-tag">CSS3</span>
-                      <span class="tech-tag">JavaScript</span>
-                    </div>
-                  </div>
-                  <div class="card__contributors">
-                    <h4>Contributors:</h4>
-                    <div class="contributors">
-                      <a href="/projects#team-2022-23">Team 2022-23</a>
+                    <div class="card__contributors">
+                      <h4>Contributors:</h4>
+                      <div class="contributors">
+                        <a href="/projects#team-2023-24">Team 2023-24</a>
+                      </div>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
-          </div>
 
-          <div class="timeline-item">
-            <div class="timeline-year">2022</div>
-            <div class="events">
-              <div class="event card">
-                <div class="card__header">
-                  <h3>Hacktoberfest 2022</h3>
-                  <!-- <div class="card__links">
+            <div class="timeline-item">
+              <div class="timeline-year">2023</div>
+              <div class="events">
+                <div class="event card">
+                  <div class="card__header">
+                    <h3>OpenSys 2023</h3>
+                    <!-- <div class="card__links">
                     <span class="status-archived">Archived</span>
                   </div> -->
-                </div>
-                <div class="card__description">
-                  <p>CBIT's celebration of Hacktoberfest 2022 with workshops, coding challenges, and open source contributions.</p>
-                  <div class="card__tech-stack">
-                    <h4>Tech Stack:</h4>
-                    <div class="tech-tags">
-                      <span class="tech-tag">HTML5</span>
-                      <span class="tech-tag">CSS3</span>
-                      <span class="tech-tag">JavaScript</span>
-                    </div>
                   </div>
-                  <div class="card__contributors">
-                    <h4>Contributors:</h4>
-                    <div class="contributors">
-                      <a href="/projects#team-2021-22">Team 2021-22</a>
+                  <div class="card__description">
+                    <p>
+                      The third edition of OpenSys featuring multiple technical
+                      events and competitions for the CBIT community.
+                    </p>
+                    <div class="card__tech-stack">
+                      <h4>Tech Stack:</h4>
+                      <div class="tech-tags">
+                        <span class="tech-tag">HTML5</span>
+                        <span class="tech-tag">CSS3</span>
+                        <span class="tech-tag">JavaScript</span>
+                      </div>
+                    </div>
+                    <div class="card__contributors">
+                      <h4>Contributors:</h4>
+                      <div class="contributors">
+                        <a href="/projects#team-2022-23">Team 2022-23</a>
+                      </div>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
-          </div>
 
-          <div class="timeline-item">
-            <div class="timeline-year">2021</div>
-            <div class="events">
-              <div class="event card">
-                <div class="card__header">
-                  <h3>Hacktoberfest 2021</h3>
-                  <!-- <div class="card__links">
+            <div class="timeline-item">
+              <div class="timeline-year">2022</div>
+              <div class="events">
+                <div class="event card">
+                  <div class="card__header">
+                    <h3>Hacktoberfest 2022</h3>
+                    <!-- <div class="card__links">
                     <span class="status-archived">Archived</span>
                   </div> -->
-                </div>
-                <div class="card__description">
-                  <p>Virtual Hacktoberfest celebration featuring online workshops, contribution drives, and community building events.</p>
-                  <div class="card__tech-stack">
-                    <h4>Tech Stack:</h4>
-                    <div class="tech-tags">
-                      <span class="tech-tag">HTML5</span>
-                      <span class="tech-tag">CSS3</span>
-                      <span class="tech-tag">JavaScript</span>
+                  </div>
+                  <div class="card__description">
+                    <p>
+                      CBIT's celebration of Hacktoberfest 2022 with workshops,
+                      coding challenges, and open source contributions.
+                    </p>
+                    <div class="card__tech-stack">
+                      <h4>Tech Stack:</h4>
+                      <div class="tech-tags">
+                        <span class="tech-tag">HTML5</span>
+                        <span class="tech-tag">CSS3</span>
+                        <span class="tech-tag">JavaScript</span>
+                      </div>
+                    </div>
+                    <div class="card__contributors">
+                      <h4>Contributors:</h4>
+                      <div class="contributors">
+                        <a href="/projects#team-2021-22">Team 2021-22</a>
+                      </div>
                     </div>
                   </div>
-                  <div class="card__contributors">
-                    <h4>Contributors:</h4>
-                    <div class="contributors">
-                      <a href="/projects#team-2020-21">Team 2020-21</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="timeline-item">
+              <div class="timeline-year">2021</div>
+              <div class="events">
+                <div class="event card">
+                  <div class="card__header">
+                    <h3>Hacktoberfest 2021</h3>
+                    <!-- <div class="card__links">
+                    <span class="status-archived">Archived</span>
+                  </div> -->
+                  </div>
+                  <div class="card__description">
+                    <p>
+                      Virtual Hacktoberfest celebration featuring online
+                      workshops, contribution drives, and community building
+                      events.
+                    </p>
+                    <div class="card__tech-stack">
+                      <h4>Tech Stack:</h4>
+                      <div class="tech-tags">
+                        <span class="tech-tag">HTML5</span>
+                        <span class="tech-tag">CSS3</span>
+                        <span class="tech-tag">JavaScript</span>
+                      </div>
+                    </div>
+                    <div class="card__contributors">
+                      <h4>Contributors:</h4>
+                      <div class="contributors">
+                        <a href="/projects#team-2020-21">Team 2020-21</a>
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -312,69 +438,133 @@
             </div>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <!-- Team Reference Section (Hidden, for linking) -->
-    <section class="section section-teams" style="display: none;">
-      <div id="team-2024-25">
-        <h3>Team 2024-25</h3>
-        <p>Contributors: MD Muzaffar (President), Mohammed Imaduddin (Vice President), Doma Akshitha Reddy, Jayanth Gudimella, Meghana Sancheti (General Secretaries), and team.</p>
-      </div>
-      <div id="team-2023-24">
-        <h3>Team 2023-24</h3>
-        <p>Contributors: Matta Sai Kiran Goud (President), Akil Krishna (Vice President), G Harshith, Nithin Konda, Ritesh Garlapati (General Secretaries), and team.</p>
-      </div>
-      <div id="team-2022-23">
-        <h3>Team 2022-23</h3>
-        <p>Contributors: Dhruv Saxena (President), Gopal Matcha (Vice President), Arshia Parveen, Nikhil Maroju, Roopika Ponnur (General Secretaries), and team.</p>
-      </div>
-      <div id="team-2021-22">
-        <h3>Team 2021-22</h3>
-        <p>Contributors: Rikhila Annem (President), Sravan Sai Lanka (Vice President), Pranathi Kodicherla, Vikas Bhatti (Secretaries), and team.</p>
-      </div>
-      <div id="team-2020-21">
-        <h3>Team 2020-21</h3>
-        <p>Contributors: Khush (President), Komali Beeram (Vice President), B. Sai Sanjeev, Jaisai Kuntala (Secretaries), and team.</p>
-      </div>
-    </section>
-  </main>
+      <!-- Team Reference Section (Hidden, for linking) -->
+      <section class="section section-teams" style="display: none">
+        <div id="team-2024-25">
+          <h3>Team 2024-25</h3>
+          <p>
+            Contributors: MD Muzaffar (President), Mohammed Imaduddin (Vice
+            President), Doma Akshitha Reddy, Jayanth Gudimella, Meghana Sancheti
+            (General Secretaries), and team.
+          </p>
+        </div>
+        <div id="team-2023-24">
+          <h3>Team 2023-24</h3>
+          <p>
+            Contributors: Matta Sai Kiran Goud (President), Akil Krishna (Vice
+            President), G Harshith, Nithin Konda, Ritesh Garlapati (General
+            Secretaries), and team.
+          </p>
+        </div>
+        <div id="team-2022-23">
+          <h3>Team 2022-23</h3>
+          <p>
+            Contributors: Dhruv Saxena (President), Gopal Matcha (Vice
+            President), Arshia Parveen, Nikhil Maroju, Roopika Ponnur (General
+            Secretaries), and team.
+          </p>
+        </div>
+        <div id="team-2021-22">
+          <h3>Team 2021-22</h3>
+          <p>
+            Contributors: Rikhila Annem (President), Sravan Sai Lanka (Vice
+            President), Pranathi Kodicherla, Vikas Bhatti (Secretaries), and
+            team.
+          </p>
+        </div>
+        <div id="team-2020-21">
+          <h3>Team 2020-21</h3>
+          <p>
+            Contributors: Khush (President), Komali Beeram (Vice President), B.
+            Sai Sanjeev, Jaisai Kuntala (Secretaries), and team.
+          </p>
+        </div>
+      </section>
+    </main>
 
-  <footer class="page__footer">
-    <div class="footer-content">
-      <div class="footer-col">
-        <h4>CBIT-OSC</h4>
-        <ul>
-          <li><a href="/">Home</a></li>
-          <li><a href="/about">About</a></li>
-          <li><a href="/events">Events</a></li>
-          <li><a href="mailto:cbitosc@gmail.com">Contact</a></li>
-          <li><a href="/coc">Code of Conduct</a></li>
-        </ul>
-      </div>
+    <footer class="page__footer">
+      <div class="footer-content">
+        <div class="footer-col">
+          <h4>CBIT-OSC</h4>
+          <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/about">About</a></li>
+            <li><a href="/events">Events</a></li>
+            <li><a href="mailto:cbitosc@gmail.com">Contact</a></li>
+            <li><a href="/coc">Code of Conduct</a></li>
+          </ul>
+        </div>
 
-      <div class="footer-col">
-        <h4>Find us on</h4>
-        <ul>
-          <li><a href="https://github.com/cbitosc" target="_blank" rel="noopener">GitHub</a></li>
-          <li><a href="https://medium.com/cosc" target="_blank" rel="noopener">Medium</a></li>
-          <li><a href="https://instagram.com/cbitosc/" target="_blank" rel="noopener">Instagram</a></li>
-          <li><a href="https://discord.gg/gpWww5hnWK" target="_blank" rel="noopener">Discord</a></li>
-          <li><a href="https://twitter.com/cbitosc" target="_blank" rel="noopener">Twitter</a></li>
-          <li><a href="https://facebook.com/cbitosc" target="_blank" rel="noopener">Facebook</a></li>
-        </ul>
-      </div>
+        <div class="footer-col">
+          <h4>Find us on</h4>
+          <ul>
+            <li>
+              <a
+                href="https://github.com/cbitosc"
+                target="_blank"
+                rel="noopener"
+                >GitHub</a
+              >
+            </li>
+            <li>
+              <a href="https://medium.com/cosc" target="_blank" rel="noopener"
+                >Medium</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://instagram.com/cbitosc/"
+                target="_blank"
+                rel="noopener"
+                >Instagram</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://discord.gg/gpWww5hnWK"
+                target="_blank"
+                rel="noopener"
+                >Discord</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://twitter.com/cbitosc"
+                target="_blank"
+                rel="noopener"
+                >Twitter</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://facebook.com/cbitosc"
+                target="_blank"
+                rel="noopener"
+                >Facebook</a
+              >
+            </li>
+          </ul>
+        </div>
 
-      <div class="footer-col">
-        <h4>&copy; COSC</h4>
-        <p>
-          <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/2.0/">
-            <img alt="Creative Commons License" src="../img/license.png" />
-          </a>
-        </p>
-        <p><a href="http://cbit.ac.in" target="_blank" rel="noopener">Chaitanya Bharathi Institute of Technology</a></p>
+        <div class="footer-col">
+          <h4>&copy; COSC</h4>
+          <p>
+            <a
+              rel="license"
+              href="http://creativecommons.org/licenses/by-nc-sa/2.0/"
+            >
+              <img alt="Creative Commons License" src="../img/license.png" />
+            </a>
+          </p>
+          <p>
+            <a href="http://cbit.ac.in" target="_blank" rel="noopener"
+              >Chaitanya Bharathi Institute of Technology</a
+            >
+          </p>
+        </div>
       </div>
-    </div>
-  </footer>
-</body>
+    </footer>
+  </body>
 </html>

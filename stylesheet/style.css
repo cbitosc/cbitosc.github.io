@@ -382,13 +382,21 @@ footer a:visited {
 }
 
 /* Projects Page Styles */
+.project_cards {
+  width: 100%;
+  display: grid;
+  /* grid-template-columns: repeat(auto-fill, minmax(192px, 1fr)); */
+  grid-gap: 1em;
+  gap: 1em;
+  align-items: start;
+}
 .section-projects, .section-archive {
   margin: 2rem 0;
 }
 
 .project.card {
   background: #fff;
-  width : 50vw;
+  max-width: 50rem;
   border-radius: 8px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   padding: 1.5rem;
