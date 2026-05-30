@@ -21,6 +21,7 @@ We feel that open source encourages students to learn, contribute and collaborat
 
 ## Some of our previous events
 
+- [OpenSys 2026](https://opensys2026.vercel.app)
 - [CBIT Hacktoberfest Hackathon 2025](https://cbit-hacktoberfest25.vercel.app)
 - [HackWeek](https://cosc-hackweek.vercel.app/)
 - Git & GitHub Workshop 
