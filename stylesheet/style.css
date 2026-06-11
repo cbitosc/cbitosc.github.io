@@ -380,3 +380,260 @@ footer a:visited {
   width: 235px;
   padding: 12.5px;
 }
+
+/* Projects Page Styles */
+.project_cards {
+  width: 100%;
+  display: grid;
+  /* grid-template-columns: repeat(auto-fill, minmax(192px, 1fr)); */
+  grid-gap: 1em;
+  gap: 1em;
+  align-items: start;
+}
+.section-projects, .section-archive {
+  margin: 2rem 0;
+}
+.project_card__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+  border-bottom: 2px solid #03a9f4;
+  padding-bottom: 0.5rem;
+}
+.project.card {
+  background: #fff;
+  max-width: 50rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 1.5rem;
+  margin: 1rem 0;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+/* .project.card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.15);
+} */
+.archived_event_title{
+  font-size: 1.5rem;
+  font-weight: 500;
+  text-decoration: none;
+}
+.card__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+  /* border-bottom: 2px solid #03a9f4; */
+  padding-bottom: 0.5rem;
+}
+
+.card__header h3 {
+  margin: 0;
+  color: #212121;
+  font-size: 1.5rem;
+}
+
+.card__links {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.card__links a {
+  background: #03a9f4;
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  text-decoration: none;
+  font-size: 0.9rem;
+  transition: background-color 0.2s ease;
+}
+
+.card__links a:hover {
+  background: #0185c2;
+}
+
+.card__description p {
+  color: #666;
+  line-height: 1.6;
+  margin-bottom: 1rem;
+}
+
+.card__features {
+  margin: 1rem 0;
+}
+
+.card__features h4, .card__tech-stack h4, .card__contributors h4 {
+  color: #212121;
+  margin: 0.5rem 0;
+  font-size: 1rem;
+}
+
+.card__features ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.card__features li {
+  color: #666;
+  margin: 0.25rem 0;
+  padding-left: 1rem;
+  position: relative;
+}
+
+.card__features li::before {
+  content: "✓";
+  color: #03a9f4;
+  font-weight: bold;
+  position: absolute;
+  left: 0;
+}
+
+.tech-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin: 0.5rem 0;
+}
+
+.tech-tag {
+  background: #e3f2fd;
+  color: #1976d2;
+  padding: 0.25rem 0.75rem;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  font-weight: 500;
+}
+
+.contributors {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin: 0.5rem 0;
+}
+
+.contributors a {
+  background: #f5f5f5;
+  color: #333;
+  padding: 0.25rem 0.75rem;
+  border-radius: 4px;
+  text-decoration: none;
+  font-size: 0.9rem;
+  transition: background-color 0.2s ease;
+}
+
+.contributors a:hover {
+  background: #e0e0e0;
+}
+
+/* Timeline Styles */
+.timeline {
+  position: relative;
+  margin: 2rem 0;
+}
+
+.timeline::before {
+  content: '';
+  position: absolute;
+  left: 2rem;
+  top: 0;
+  bottom: 0;
+  width: 2px;
+  background: #03a9f4;
+}
+
+.timeline-item {
+  position: relative;
+  margin: 2rem 0;
+  padding-left: 5rem;
+}
+
+.timeline-year {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 4rem;
+  height: 4rem;
+  background: #03a9f4;
+  color: white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  font-size: 1rem;
+  z-index: 1;
+}
+
+.events {
+  margin-left: 1rem;
+}
+
+.event.card {
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 1.5rem;
+  margin: 1rem 0;
+  border-left: 4px solid #03a9f4;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+/* .event.card:hover {
+  transform: translateX(5px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+} */
+
+.status-archived {
+  background: #ffa726;
+  color: white;
+  padding: 0.25rem 0.75rem;
+  border-radius: 4px;
+  font-size: 0.8rem;
+  font-weight: 500;
+}
+
+/* Responsive Design */
+@media only screen and (max-width: 48em) {
+  .card__header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5rem;
+  }
+  
+  .timeline::before {
+    left: 1rem;
+  }
+  
+  .timeline-item {
+    padding-left: 3rem;
+  }
+  
+  .timeline-year {
+    width: 2rem;
+    height: 2rem;
+    font-size: 0.8rem;
+  }
+  
+  .tech-tags, .contributors {
+    justify-content: flex-start;
+  }
+}
+
+@media only screen and (max-width: 36em) {
+  .timeline-item {
+    padding-left: 2.5rem;
+  }
+  
+  .timeline-year {
+    width: 1.5rem;
+    height: 1.5rem;
+    font-size: 0.7rem;
+  }
+  
+  .events {
+    margin-left: 0.5rem;
+  }
+}
