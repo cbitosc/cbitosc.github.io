@@ -21,14 +21,16 @@ We feel that open source encourages students to learn, contribute and collaborat
 
 ## Some of our previous events
 
+- [CBIT Hacktoberfest Hackathon 2026](https://cbit-hacktoberfest26.vercel.app/)
+- [HackWeek](https://coschackweek.vercel.app/)
+- Global Open Source Awareness Session 2026
 - [OpenSys 2026](https://opensys2026.vercel.app)
 - [CBIT Hacktoberfest Hackathon 2025](https://cbit-hacktoberfest25.vercel.app)
 - [HackWeek](https://cosc-hackweek.vercel.app/)
 - Git & GitHub Workshop 
 - [OpenSys'25](https://opensys2025.vercel.app/)
 - GSOC Awareness Session 2025
-- [CBIT Hacktoberfest Hackathon 2024](https://cbit-hacktoberfest24.vercel.app)
-- ReactJS & FastAPI Bootcamp, Python 101 session, and many more...
+
 
 ## Follow us on
 
